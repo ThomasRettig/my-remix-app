@@ -1,0 +1,17 @@
+.admin {
+  display: flex;
+}
+
+.admin > nav {
+  padding-right: 2rem;
+}
+
+.admin > main {
+  flex: 1;
+  border-left: 1px solid var(--color-border);
+  padding-left: 2rem;
+}
+
+em {
+  color: red;
+}
