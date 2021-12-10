@@ -22,9 +22,9 @@ export let action: ActionFunction = async ({ request }) => {
   }
 
   if (answer !== "egg") {
-    return json(`Sorry, ${answer} is not right.`, { status: 400 });
+    return json(`Sorry, your answer “${answer}” is not right.`, { status: 400 });
   }
-
+  
   // Finally, if the data is valid, you'll typically write to a database or send or
   // email or log the user in, etc. It's recommended to redirect after a
   // successful action, even if it's to the same place so that non-JavaScript workflows
